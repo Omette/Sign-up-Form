@@ -1,0 +1,136 @@
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --racing-font: "Racing Sans One", sans-serif;   
+    --input-font: "BBH Bartle", sans-serif;
+    --para-font: "Montserrat", sans-serif;
+
+    --bb-black: #000000;
+    --bb-yellow: #ebdb03;
+    --bb-white: #ffffff;
+    --bb-bg: #e6e6e6;
+}
+
+.bb{
+    color: var(--bb-yellow);
+    text-shadow: 2px 0px 4px var(--bb-black);
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 20vh;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(40, 40, 0, 0.6) 25%, rgba(40, 40, 0, 0.6) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bb-logo{
+    height: 400px;
+}
+
+.ome{
+    color: pink;
+    text-shadow: 2px 0px 4px var(--bb-black);
+}
+
+
+body{
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    background-color: var(--bb-bg);
+}
+
+form{
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px 0px #000000;
+}
+
+h1{
+    max-width: 45ch;
+    font-family: var(--racing-font);
+    font-weight: 400;
+}
+
+p{
+    margin: 0;
+    padding: 0 2rem;
+    font-family: var(--para-font);
+}
+
+button{
+    border-radius: 1rem;
+    margin: 2rem;
+    width: 200px;
+    height: 50px;
+
+    color: var(--bb-black);
+    background-color: var(--bb-yellow);
+    border: 2px solid var(--bb-black);
+    font-family: var(--racing-font);
+    font-size: 1.5rem;
+}
+
+label{
+    font-family: var(--para-font);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+input{
+    width: 15rem;
+    height: 1.5rem;
+    border: 1px solid var(--bb-bg);
+    border-radius: 7px;
+    padding: 0 0.5rem;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border-color: blue;
+}
+
+.form-container > h1{
+    padding: 0 2rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    min-width: 800px;
+    box-shadow: 0px 5px 15px 5px #000000;
+}
+
+.form-row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.form-component{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+.bg-splash{
+    flex: auto;
+    width: 50vw;
+    background-image: url('img/background2.png');
+    background-size: cover;
+}
